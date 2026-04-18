@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESTHER — An Instrument of Peace</title>
+  <meta name="description" content="Help bring ESTHER: An Instrument of Peace to life — an original faith-based musical by Kimberly Kofoed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ────────────────────────────────────────────── -->
+  <header class="e-nav" id="e-nav">
+    <div class="nav-inner">
+      <a href="../" class="nav-back">← Kofoed Family Music</a>
+      <a href="#donate-panel" class="nav-cta">Donate</a>
+    </div>
+  </header>
+
+  <!-- ── HERO + DONATE PANEL ───────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- Title -->
+      <div class="hero-wordmark">
+        <p class="hero-eyebrow">Original Musical · Written by Kimberly Kofoed</p>
+        <h1 class="hero-title">ESTHER</h1>
+        <p class="hero-instrument">An Instrument of Peace</p>
+        <p class="hero-tagline">"For such a time as this."</p>
+      </div>
+
+      <!-- Donation panel — visible above the fold -->
+      <div class="donate-panel" id="donate-panel">
+        <p class="panel-label">Help finish the music — Goal: <strong>$50,000</strong></p>
+
+        <div class="amt-row" id="amt-row">
+          <button class="amt" data-amount="25">$25</button>
+          <button class="amt active" data-amount="50">$50</button>
+          <button class="amt" data-amount="100">$100</button>
+          <button class="amt" data-amount="250">$250</button>
+          <button class="amt" data-amount="500">$500</button>
+          <button class="amt amt-other" data-amount="other">Other</button>
+        </div>
+
+        <div class="custom-row" id="custom-row" hidden>
+          <span class="c-prefix">$</span>
+          <input type="number" id="custom-in" class="custom-in" placeholder="Enter amount" min="1" />
+        </div>
+
+        <p class="impact" id="impact">Covers recording materials for a studio session</p>
+
+        <form id="pp-form" action="https://www.paypal.com/donate" method="post" target="_blank">
+          <input type="hidden" name="campaign_id" value="W2KQ5YYSU3SS6" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="amount" id="pp-amount" value="50" />
+          <button type="submit" class="donate-btn">
+            Donate <span id="donate-lbl">$50</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+
+        <p class="panel-secure">
+          <svg width="11" height="12" viewBox="0 0 13 14" fill="none"><rect x="1" y="5.5" width="11" height="8" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M4 5.5V4a2.5 2.5 0 015 0v1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          Secure checkout via PayPal — opens in a new tab
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE STORY — minimal ────────────────────────────── -->
+  <section class="story-section">
+    <div class="container-narrow">
+      <p class="story-quote reveal">
+        "I was drawn to Esther because her story offers something our world deeply needs —
+        <em>true beauty is not merely seen. It is lived.</em>"
+      </p>
+      <p class="story-attr reveal">— Kimberly Kofoed, Creator</p>
+    </div>
+  </section>
+
+  <!-- ── PROJECT FACTS ──────────────────────────────────── -->
+  <section class="facts-section">
+    <div class="container">
+      <div class="facts-grid">
+        <div class="fact reveal">
+          <span class="fact-n">15</span>
+          <span class="fact-l">Original Songs</span>
+        </div>
+        <div class="fact reveal">
+          <span class="fact-n">8</span>
+          <span class="fact-l">Professionally Produced</span>
+        </div>
+        <div class="fact reveal">
+          <span class="fact-n">7</span>
+          <span class="fact-l">In Progress</span>
+        </div>
+        <div class="fact reveal">
+          <span class="fact-n">$50K</span>
+          <span class="fact-l">Funding Goal</span>
+        </div>
+      </div>
+      <p class="facts-comps reveal">
+        In the tradition of <em>The Prince of Egypt</em> · <em>Les Misérables</em> · <em>The Greatest Showman</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── IMAGE + WHAT IT FUNDS ──────────────────────────── -->
+  <section class="split-section">
+    <div class="split-image">
+      <img src="Esther Image 3.png" alt="Esther" />
+    </div>
+    <div class="split-text">
+      <p class="eyebrow">Your Gift Funds</p>
+      <ul class="funds-list">
+        <li>Studio musicians &amp; vocalists</li>
+        <li>Professional mixing &amp; mastering</li>
+        <li>Choir &amp; orchestral arrangements</li>
+        <li>Sheet music &amp; licensing assets</li>
+      </ul>
+      <div class="phase-block">
+        <div class="phase">
+          <span class="phase-lbl">Phase 1 — $30,000</span>
+          <span class="phase-desc">Finish 8 songs professionally + complete all demos</span>
+        </div>
+        <div class="phase">
+          <span class="phase-lbl">Phase 2 — $20,000</span>
+          <span class="phase-desc">Full soundtrack + licensing assets</span>
+        </div>
+      </div>
+      <a href="#donate-panel" class="inline-donate-btn reveal">Give Now →</a>
+    </div>
+  </section>
+
+  <!-- ── THEMES ─────────────────────────────────────────── -->
+  <section class="themes-section">
+    <div class="container">
+      <div class="themes-grid">
+        <div class="theme reveal"><span>✦</span> Providence &amp; Purpose</div>
+        <div class="theme reveal"><span>✦</span> Courage in Adversity</div>
+        <div class="theme reveal"><span>✦</span> The Worth of Every Soul</div>
+        <div class="theme reveal"><span>✦</span> Strength of Family</div>
+        <div class="theme reveal"><span>✦</span> Peace, Love &amp; Compassion</div>
+        <div class="theme reveal"><span>✦</span> Faith-Based · Broad Audience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM ───────────────────────────────────────────── -->
+  <section class="team-section">
+    <div class="container">
+      <p class="eyebrow text-center reveal">The Team</p>
+      <div class="team-row">
+        <div class="team-card reveal">
+          <p class="t-role">Creator &amp; Songwriter</p>
+          <h3 class="t-name">Kimberly Kofoed</h3>
+          <p class="t-desc">Lifelong songwriter. Proven faith-centered catalog. Multi-voice family brand.</p>
+        </div>
+        <div class="team-card reveal">
+          <p class="t-role">Producer &amp; Arranger</p>
+          <h3 class="t-name">Daniel Blomberg</h3>
+          <p class="t-desc">International producer, songwriter, and music educator.</p>
+        </div>
+        <div class="team-card reveal">
+          <p class="t-role">Recording Engineer</p>
+          <h3 class="t-name">Dave Zimmerman</h3>
+          <p class="t-desc">Billboard-charting engineer. Millions of streams. Hundreds of artists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLOSING CTA ────────────────────────────────────── -->
+  <section class="closing-section">
+    <div class="closing-bg"></div>
+    <div class="closing-overlay"></div>
+    <div class="container-narrow closing-inner reveal">
+      <p class="closing-eyebrow">For Such A Time As This</p>
+      <h2 class="closing-title">Help bring this story to life.</h2>
+      <a href="#donate-panel" class="donate-btn closing-donate-btn">Donate Now →</a>
+      <p class="closing-contact">For sponsorship or investment: <a href="mailto:kimberlykofoed@gmail.com">kimberlykofoed@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="e-footer">
+    <div class="container footer-row">
+      <div>
+        <p class="footer-name">ESTHER</p>
+        <p class="footer-sub">An Instrument of Peace · An Original Musical</p>
+      </div>
+      <div class="footer-links">
+        <a href="../">Kofoed Family Music</a>
+        <a href="#donate-panel">Donate</a>
+        <a href="mailto:kimberlykofoed@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; <span id="yr"></span> Kofoed Family Music. All rights reserved.</p>
+  </footer>
+
+  <!-- ── STICKY BAR ─────────────────────────────────────── -->
+  <div class="sticky-bar" id="sticky-bar" aria-hidden="true">
+    <div class="sticky-inner">
+      <span class="sticky-title">ESTHER <span class="sticky-sub">— An Instrument of Peace</span></span>
+      <div class="sticky-amts">
+        <button class="s-amt" data-amount="50">$50</button>
+        <button class="s-amt" data-amount="100">$100</button>
+        <button class="s-amt" data-amount="250">$250</button>
+      </div>
+      <button class="sticky-btn" id="sticky-give">Give Now</button>
+    </div>
+  </div>
+
+  <script>
+    'use strict';
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    /* Nav scroll */
+    var nav = document.getElementById('e-nav');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    /* Sticky bar: hide while hero is visible */
+    var sBar = document.getElementById('sticky-bar');
+    var hero = document.querySelector('.hero');
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        var show = !entries[0].isIntersecting;
+        sBar.classList.toggle('visible', show);
+        sBar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      }, { threshold: 0 }).observe(hero);
+    }
+
+    /* Donation logic — shared between panel and sticky */
+    var IMPACTS = {
+      '25':  'Helps cover sheet music and arrangement materials',
+      '50':  'Covers recording materials for a studio session',
+      '100': 'Supports a full day of professional studio recording',
+      '250': 'Helps bring one complete song to life',
+      '500': 'Funds the full production of one song — start to finish',
+    };
+
+    var ppAmount   = document.getElementById('pp-amount');
+    var donateLbl  = document.getElementById('donate-lbl');
+    var impactEl   = document.getElementById('impact');
+    var customRow  = document.getElementById('custom-row');
+    var customIn   = document.getElementById('custom-in');
+    var currentAmt = '50';
+
+    function setAmt(val, labelOverride) {
+      currentAmt     = val;
+      ppAmount.value = val;
+      donateLbl.textContent = labelOverride || ('$' + val);
+      impactEl.textContent  = IMPACTS[val] || 'Every dollar brings this story closer to life';
+    }
+
+    document.getElementById('amt-row').addEventListener('click', function (e) {
+      var btn = e.target.closest('.amt');
+      if (!btn) return;
+      document.querySelectorAll('.amt').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      if (btn.dataset.amount === 'other') {
+        customRow.hidden = false;
+        customIn.focus();
+        ppAmount.value = '';
+        donateLbl.textContent = 'Your Amount';
+        impactEl.textContent  = 'Every dollar brings this story closer to life';
+        currentAmt = 'other';
+      } else {
+        customRow.hidden = true;
+        setAmt(btn.dataset.amount);
+      }
+    });
+
+    customIn.addEventListener('input', function () {
+      var v = parseFloat(customIn.value);
+      if (v > 0) {
+        ppAmount.value        = v.toFixed(2);
+        donateLbl.textContent = '$' + Math.round(v);
+        impactEl.textContent  = 'Every dollar brings this story closer to life';
+      }
+    });
+
+    /* Sticky amounts update the main form + panel */
+    document.querySelectorAll('.s-amt').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.s-amt').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var amt = btn.dataset.amount;
+        setAmt(amt);
+        customRow.hidden = true;
+        document.querySelectorAll('.amt').forEach(function (b) {
+          b.classList.toggle('active', b.dataset.amount === amt);
+        });
+      });
+    });
+
+    document.getElementById('sticky-give').addEventListener('click', function () {
+      document.getElementById('pp-form').submit();
+    });
+
+    /* Smooth scroll */
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = this.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+      });
+    });
+
+    /* Scroll reveal */
+    if ('IntersectionObserver' in window) {
+      var ro = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('visible'); ro.unobserve(en.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal').forEach(function (el) { ro.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
+    }
+  </script>
+</body>
+</html>

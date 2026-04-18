@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Kofoed Family Music | Faith-Driven Family Harmonies</title>
+  <meta name="description" content="Kofoed Family Music — faith-driven family harmonies. New music, music videos, and the stories behind the songs." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://kofoedfamilymusic.com/" />
+  <meta property="og:title"       content="Kofoed Family Music | Faith-Driven Family Harmonies" />
+  <meta property="og:description" content="Faith-driven family harmonies. New music, videos, and the stories behind the songs." />
+  <meta property="og:image"       content="img/hero-bg.jpg" /><!-- REPLACE: full-res social share image -->
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" /><!-- REPLACE: real favicon -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       STICKY NAV
+  ========================================================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Kofoed Family Music — home">KFM</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#music">Music</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#music"   class="mobile-link">Music</a></li>
+        <li><a href="#videos"  class="mobile-link">Videos</a></li>
+        <li><a href="#about"   class="mobile-link">About</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =========================================================
+         HERO
+    ========================================================= -->
+    <section class="hero" id="home" aria-label="Hero">
+      <!-- REPLACE: swap .hero-bg background-image for a full-bleed photo or video poster -->
+      <div class="hero-bg" role="img" aria-label="Kofoed Family Music band photo backdrop"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="hero-content fade-in-up">
+        <p class="hero-established">Established 1990</p>
+        <h1 class="hero-wordmark">Kofoed<br>Family<br>Music</h1>
+        <p class="hero-tagline">Faith-driven family harmonies.</p>
+        <div class="hero-ctas">
+          <a href="https://open.spotify.com/artist/0TXkxa6otHDzA3Od4htZwL"
+             class="btn btn-spotify"
+             target="_blank" rel="noopener"
+             aria-label="Listen to Kofoed Family Music on Spotify">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 01-.277-1.215c3.809-.87 7.076-.495 9.712 1.115a.623.623 0 01.207.857zm1.223-2.722a.78.78 0 01-1.072.257c-2.687-1.652-6.785-2.13-9.965-1.166a.78.78 0 01-.973-.519.781.781 0 01.519-.972c3.632-1.102 8.147-.568 11.234 1.328a.78.78 0 01.257 1.072zm.105-2.835C14.69 8.95 9.375 8.775 6.297 9.71a.937.937 0 11-.543-1.793c3.573-1.084 9.515-.875 13.27 1.368a.937.937 0 01-.31 1.582z"/>
+            </svg>
+            Listen on Spotify
+          </a>
+          <!-- REPLACE: update href with real YouTube channel URL -->
+          <a href="https://www.youtube.com/@kofoedfamilymusic"
+             class="btn btn-outline-white"
+             target="_blank" rel="noopener"
+             aria-label="Watch Kofoed Family Music on YouTube">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+            </svg>
+            Watch on YouTube
+          </a>
+          <a href="https://music.apple.com/us/artist/kofoed-family-music/1666744650"
+             class="btn btn-apple-music"
+             target="_blank" rel="noopener"
+             aria-label="Listen to Kofoed Family Music on Apple Music">
+<img src="img/Apple music.png" alt="" aria-hidden="true" style="width:1rem;height:1rem;object-fit:contain;">
+            Listen on Apple Music
+          </a>
+        </div>
+      </div>
+
+      <a href="#latest" class="hero-scroll-hint" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         LATEST RELEASE
+    ========================================================= -->
+    <!-- =========================================================
+         ESTHER PROMO BANNER
+    ========================================================= -->
+    <section class="esther-banner" aria-label="Esther musical fundraiser">
+      <div class="container">
+        <div class="esther-banner-inner reveal">
+          <div class="esther-banner-text">
+            <span class="eyebrow" style="color:var(--gold,#c9a84c);">Now Raising Funds</span>
+            <h2 class="esther-banner-title">ESTHER: An Instrument of Peace</h2>
+            <p class="esther-banner-sub">An original family musical inspired by the biblical story of Esther — courage, faith, and divine purpose. Help bring this vision to life.</p>
+          </div>
+          <a href="esther/" class="btn esther-banner-btn">Support the Vision →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-release chosen-spotlight" id="latest" aria-labelledby="latest-heading">
+      <div class="container">
+        <div class="release-grid reveal">
+          <div class="release-art">
+            <div class="video-embed-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/YBLCJQrg6Yg"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                title="He Has Come — Easter Celebration Featuring The Chosen">
+              </iframe>
+            </div>
+          </div>
+          <div class="release-info">
+            <span class="eyebrow">Music Video · Featuring The Chosen</span>
+            <h2 class="release-title" id="latest-heading">He Has Come</h2>
+            <p class="release-meta">Easter 2025 · Easter Celebration</p>
+            <p class="release-story">
+              An Easter celebration filmed with the cast of <em>The Chosen</em> — a powerful
+              declaration that He has come for every one of us. This music video brings together
+              faith, family, and the story that changes everything.
+            </p>
+            <div class="chosen-badge">
+              <span>Music Video Featuring</span>
+              <strong>THE CHOSEN</strong>
+            </div>
+            <a href="songs/he-has-come/" class="btn btn-primary">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         DISCOGRAPHY GRID
+    ========================================================= -->
+    <section class="discography" id="music" aria-labelledby="music-heading">
+      <div class="container">
+        <span class="eyebrow eyebrow-dark">Discography</span>
+        <h2 class="section-title section-title-dark" id="music-heading">Music</h2>
+
+        <div class="discog-grid">
+
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/he-has-come.jpg" alt="He Has Come artwork"> -->
+          <a href="songs/he-has-come/" class="discog-tile" aria-label="He Has Come — read the story">
+            <div class="tile-art"><img src="img/thumb-he-has-come.png" alt="He Has Come artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">He Has Come</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/please-come-home.jpg" alt="Please Come Home artwork"> -->
+          <a href="songs/please-come-home/" class="discog-tile" aria-label="Please Come Home — read the story">
+            <div class="tile-art"><img src="img/thumb-please-come-home.png" alt="Please Come Home artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Please Come Home</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/carry-me.jpg" alt="Carry Me artwork"> -->
+          <a href="songs/carry-me/" class="discog-tile" aria-label="Carry Me — read the story">
+            <div class="tile-art"><img src="img/thumb-carry-me.png" alt="Carry Me artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Carry Me</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/come-to-zion.jpg" alt="Come to Zion artwork"> -->
+          <a href="songs/come-to-zion/" class="discog-tile" aria-label="Come to Zion — read the story">
+            <div class="tile-art"><img src="img/thumb-come-to-zion.png" alt="Come to Zion artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Come to Zion</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/when-i-pray-for-you.jpg" alt="When I Pray For You artwork"> -->
+          <a href="songs/when-i-pray-for-you/" class="discog-tile" aria-label="When I Pray For You — read the story">
+            <div class="tile-art"><img src="img/thumb-when-i-pray-for-you.png" alt="When I Pray For You artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">When I Pray For You</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/the-one.jpg" alt="The One artwork"> -->
+          <a href="songs/the-one/" class="discog-tile" aria-label="The One — read the story">
+            <div class="tile-art"><img src="img/thumb-the-one.png" alt="The One artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">The One</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/dont-wait.jpg" alt="Don't Wait artwork"> -->
+          <a href="songs/dont-wait/" class="discog-tile" aria-label="Don't Wait — read the story">
+            <div class="tile-art"><img src="img/thumb-dont-wait.png" alt="Don't Wait artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Don't Wait</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/lay-my-weapons-down.jpg" alt="Lay My Weapons Down artwork"> -->
+          <a href="songs/lay-my-weapons-down/" class="discog-tile" aria-label="Lay My Weapons Down — read the story">
+            <div class="tile-art"><img src="img/thumb-lay-my-weapons-down.png" alt="Lay My Weapons Down artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Lay My Weapons Down</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/going-home.jpg" alt="Going Home artwork"> -->
+          <a href="songs/going-home/" class="discog-tile" aria-label="Going Home — read the story">
+            <div class="tile-art"><img src="img/thumb-going-home.png" alt="Going Home artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Going Home</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/can-you-see-me.jpg" alt="Can You See Me artwork"> -->
+          <a href="songs/can-you-see-me/" class="discog-tile" aria-label="Can You See Me — read the story">
+            <div class="tile-art"><img src="img/thumb-can-you-see-me.png" alt="Can You See Me artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Can You See Me</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/grace-for-the-fallen.jpg" alt="Grace for the Fallen artwork"> -->
+          <a href="songs/grace-for-the-fallen/" class="discog-tile" aria-label="Grace for the Fallen — read the story">
+            <div class="tile-art"><img src="img/thumb-grace-for-the-fallen.png" alt="Grace for the Fallen artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Grace for the Fallen</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/youre-never-leaving.jpg" alt="You're Never Leaving artwork"> -->
+          <a href="songs/youre-never-leaving/" class="discog-tile" aria-label="You're Never Leaving — read the story">
+            <div class="tile-art"><img src="img/thumb-youre-never-leaving.png" alt="You're Never Leaving artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">You're Never Leaving</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/connection.jpg" alt="Connection artwork"> -->
+          <a href="songs/connection/" class="discog-tile" aria-label="Connection — read the story">
+            <div class="tile-art"><img src="img/thumb-connection.png" alt="Connection artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Connection</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/i-can-hold-on.jpg" alt="I Can Hold On artwork"> -->
+          <a href="songs/i-can-hold-on/" class="discog-tile" aria-label="I Can Hold On — read the story">
+            <div class="tile-art"><img src="img/thumb-i-can-hold-on.png" alt="I Can Hold On artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">I Can Hold On</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/million-reasons.jpg" alt="Million Reasons artwork"> -->
+          <a href="songs/million-reasons/" class="discog-tile" aria-label="Million Reasons — read the story">
+            <div class="tile-art"><img src="img/thumb-million-reasons.png" alt="Million Reasons artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Million Reasons</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/rescued-me.jpg" alt="Rescued Me artwork"> -->
+          <a href="songs/rescued-me/" class="discog-tile" aria-label="Rescued Me — read the story">
+            <div class="tile-art"><img src="img/thumb-rescued-me.png" alt="Rescued Me artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Rescued Me</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/perfectly-created.jpg" alt="Perfectly Created artwork"> -->
+          <a href="songs/perfectly-created/" class="discog-tile" aria-label="Perfectly Created — read the story">
+            <div class="tile-art"><img src="img/thumb-perfectly-created.png" alt="Perfectly Created artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Perfectly Created</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/one-step-nearer-to-christ.jpg" alt="One Step Nearer to Christ artwork"> -->
+          <a href="songs/one-step-nearer-to-christ/" class="discog-tile" aria-label="One Step Nearer to Christ — read the story">
+            <div class="tile-art"><img src="img/thumb-one-step-nearer-to-christ.png" alt="One Step Nearer to Christ artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">One Step Nearer to Christ</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/el11even.jpg" alt="E11even artwork"> -->
+          <a href="songs/e11even/" class="discog-tile" aria-label="E11even — read the story">
+            <div class="tile-art"><img src="img/thumb-e11even.png" alt="E11even artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">E11even</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/for-me-alone.jpg" alt="For Me Alone artwork"> -->
+          <a href="songs/for-me-alone/" class="discog-tile" aria-label="For Me Alone — read the story">
+            <div class="tile-art"><img src="img/thumb-for-me-alone.png" alt="For Me Alone artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">For Me Alone</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/just-this-beautiful-day.jpg" alt="Just This Beautiful Day artwork"> -->
+          <a href="songs/just-this-beautiful-day/" class="discog-tile" aria-label="Just This Beautiful Day — read the story">
+            <div class="tile-art"><img src="img/thumb-just-this-beautiful-day.png" alt="Just This Beautiful Day artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Just This Beautiful Day</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/miracle-maker.jpg" alt="Miracle Maker artwork"> -->
+          <a href="songs/miracle-maker/" class="discog-tile" aria-label="Miracle Maker — read the story">
+            <div class="tile-art"><img src="img/thumb-miracle-maker.png" alt="Miracle Maker artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Miracle Maker</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/strength-from-you.jpg" alt="Strength From You artwork"> -->
+          <a href="songs/strength-from-you/" class="discog-tile" aria-label="Strength From You — read the story">
+            <div class="tile-art"><img src="img/thumb-strength-from-you.png" alt="Strength From You artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Strength From You</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/what-is-a-father.jpg" alt="What Is a Father artwork"> -->
+          <a href="songs/what-is-a-father/" class="discog-tile" aria-label="What Is a Father — read the story">
+            <div class="tile-art"><img src="img/thumb-what-is-a-father.png" alt="What is a Father artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">What Is a Father</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/how-great-thou-art.jpg" alt="How Great Thou Art artwork"> -->
+          <a href="songs/how-great-thou-art/" class="discog-tile" aria-label="How Great Thou Art — read the story">
+            <div class="tile-art"><img src="img/thumb-how-great-thou-art.png" alt="How Great Thou Art artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">How Great Thou Art</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/she-is.jpg" alt="She Is artwork"> -->
+          <a href="songs/she-is/" class="discog-tile" aria-label="She Is — read the story">
+            <div class="tile-art"><img src="img/thumb-she-is.png" alt="She Is artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">She Is</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/come-thou-fount.jpg" alt="Come Thou Fount artwork"> -->
+          <a href="songs/come-thou-fount/" class="discog-tile" aria-label="Come Thou Fount — read the story">
+            <div class="tile-art"><img src="img/thumb-come-thou-fount.png" alt="Come Thou Fount artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <p class="tile-title">Come Thou Fount</p>
+          </a>
+
+        </div><!-- /discog-grid -->
+
+        <!-- ── Christmas ── -->
+        <div class="discog-christmas-header">
+          <span class="eyebrow eyebrow-dark">Christmas</span>
+          <h3 class="discog-christmas-title">Christmas Songs</h3>
+        </div>
+        <div class="discog-grid">
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/long-ago-far-away.jpg" alt="Long Ago, Far Away artwork"> -->
+          <a href="songs/long-ago-far-away/" class="discog-tile" aria-label="Long Ago, Far Away — read the story">
+            <div class="tile-art"><img src="img/thumb-long-ago-far-away.png" alt="Long Ago, Far Away artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <span class="tile-badge tile-badge-christmas">Christmas</span>
+            <p class="tile-title">Long Ago, Far Away</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/our-king.jpg" alt="Our King artwork"> -->
+          <a href="songs/our-king/" class="discog-tile" aria-label="Our King — read the story">
+            <div class="tile-art"><img src="img/thumb-our-king.png" alt="Our King artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <span class="tile-badge tile-badge-christmas">Christmas</span>
+            <p class="tile-title">Our King</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/gifts-of-christmas.jpg" alt="Gifts of Christmas artwork"> -->
+          <a href="songs/gifts-of-christmas/" class="discog-tile" aria-label="Gifts of Christmas — read the story">
+            <div class="tile-art"><img src="img/thumb-gifts-of-christmas.png" alt="Gifts of Christmas artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <span class="tile-badge tile-badge-christmas">Christmas</span>
+            <p class="tile-title">Gifts of Christmas</p>
+          </a>
+          <!-- REPLACE: swap tile-img-placeholder for <img src="img/what-child-is-this.jpg" alt="What Child Is This artwork"> -->
+          <a href="songs/what-child-is-this/" class="discog-tile" aria-label="What Child Is This — read the story">
+            <div class="tile-art"><img src="img/thumb-what-child-is-this.png" alt="What Child is This artwork" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="tile-overlay" aria-hidden="true"><svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span class="tile-cta">Read More →</span></div></div>
+            <span class="tile-badge tile-badge-christmas">Christmas</span>
+            <p class="tile-title">What Child Is This</p>
+          </a>
+        </div><!-- /discog-grid christmas -->
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VIDEO SECTION
+    ========================================================= -->
+    <section class="videos" id="videos" aria-labelledby="videos-heading">
+      <div class="container">
+        <span class="eyebrow">Watch</span>
+        <h2 class="section-title" id="videos-heading">Videos</h2>
+
+        <div class="video-carousel reveal">
+          <!-- Main player + arrows -->
+          <div class="video-carousel-stage">
+            <button class="video-arrow video-arrow-prev" aria-label="Previous video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="video-carousel-main">
+              <div class="video-embed-wrap">
+                <iframe
+                  id="video-main-iframe"
+                  src="https://www.youtube.com/embed/GCAOmmn2wj4"
+                  title="Carry Me — Kofoed Family Music"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+
+            <button class="video-arrow video-arrow-next" aria-label="Next video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <p class="video-caption" id="video-main-caption">Carry Me &middot; Official Music Video</p>
+
+          <!-- Thumbnail row -->
+          <div class="video-thumb-row">
+            <button class="video-thumb-btn is-active"
+              data-video-id="GCAOmmn2wj4"
+              data-caption="Carry Me &middot; Official Music Video"
+              aria-label="Play Carry Me">
+              <img src="https://img.youtube.com/vi/GCAOmmn2wj4/mqdefault.jpg" alt="Carry Me" loading="lazy">
+              <span class="video-thumb-label">Carry Me</span>
+            </button>
+            <button class="video-thumb-btn"
+              data-video-id="oBpB6ZPYv0o"
+              data-caption="Miracle Maker &middot; Official Music Video"
+              aria-label="Play Miracle Maker">
+              <img src="https://img.youtube.com/vi/oBpB6ZPYv0o/mqdefault.jpg" alt="Miracle Maker" loading="lazy">
+              <span class="video-thumb-label">Miracle Maker</span>
+            </button>
+            <button class="video-thumb-btn"
+              data-video-id="FkoZh0bJ5Bk"
+              data-caption="He Has Come &middot; Easter Celebration Featuring The Chosen"
+              aria-label="Play He Has Come">
+              <img src="https://img.youtube.com/vi/FkoZh0bJ5Bk/mqdefault.jpg" alt="He Has Come" loading="lazy">
+              <span class="video-thumb-label">He Has Come</span>
+            </button>
+            <button class="video-thumb-btn"
+              data-video-id="zCl8vepw48I"
+              data-caption="Come to Zion &middot; Israel, Israel, God is Calling"
+              aria-label="Play Come to Zion">
+              <img src="https://img.youtube.com/vi/zCl8vepw48I/mqdefault.jpg" alt="Come to Zion" loading="lazy">
+              <span class="video-thumb-label">Come to Zion</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================= -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div class="about-portrait">
+            <!--
+              REPLACE — Kimberly / Band Portrait
+              Swap the placeholder div below for:
+                <img src="your-photo.jpg" alt="Kimberly Kofoed" />
+              Recommended: portrait-oriented photo, min 800×1000px
+            -->
+<img src="img/Kimberly Kofoed.png" alt="Kimberly Kofoed" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:var(--radius-md);box-shadow:0 24px 64px rgba(0,0,0,0.15);">
+          </div>
+          <div class="about-text">
+            <span class="eyebrow eyebrow-dark">Our Story</span>
+            <h2 id="about-heading" class="about-title">Family. Faith. Music.</h2>
+            <p>
+              Kimberly Kofoed is the mom — and now grandma — of a big, beautifully messy family,
+              and a songwriter who believes music is one of the most powerful ways we connect with
+              each other and with God. Kofoed Family Music grew out of that belief: that a song can
+              lighten a burden, open a heart, and remind you that you are never, ever alone.
+            </p>
+            <p>
+              Every track is written from the inside of real life — the hard moments and the joyful
+              ones — and sung by a family that knows what it means to hold each other up.
+              We make music so you feel seen. <strong>You are loved.</strong>
+            </p>
+            <a href="/about" class="link-arrow" aria-label="Read the full Kofoed Family Music story">
+              Read our full story →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EMAIL CAPTURE
+    ========================================================= -->
+    <section class="email-capture" id="contact" aria-labelledby="email-heading">
+      <div class="container email-capture-inner reveal">
+        <h2 id="email-heading" class="email-title">New songs in your inbox.</h2>
+        <p class="email-sub">
+          Be the first to hear new releases, stories behind the songs, and show announcements.
+        </p>
+
+        <!--
+          REPLACE: replace the form action + method with your Mailchimp/ConvertKit embed action URL.
+          Example Mailchimp: action="https://yourdomain.us21.list-manage.com/subscribe/post?u=XXX&id=YYY"
+          Remove the mailto: fallback once wired up.
+        -->
+        <form class="email-form"
+              action="mailto:info@kofoedfamilymusic.com"
+              method="post"
+              enctype="text/plain"
+              novalidate
+              aria-label="Email signup form">
+          <div class="email-form-group email-form-group--stacked">
+            <label for="name-input" class="sr-only">Your name</label>
+            <input
+              type="text"
+              id="name-input"
+              name="name"
+              class="email-input"
+              placeholder="Your name"
+              autocomplete="given-name"
+            />
+            <label for="email-input" class="sr-only">Your email address</label>
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              class="email-input"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+              aria-required="true"
+            />
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe to the mailing list">
+              Subscribe
+            </button>
+          </div>
+          <p class="email-legal">No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+
+      <p class="footer-logo">Kofoed Family Music</p>
+
+      <!-- Social / Streaming icons — monochrome inline SVG, no image files -->
+      <nav class="footer-icons" aria-label="Social media and streaming platforms">
+
+        <!-- Spotify -->
+        <!-- REPLACE: update href with real Spotify artist URL -->
+        <a href="https://open.spotify.com/artist/0TXkxa6otHDzA3Od4htZwL"
+           class="footer-icon-link" target="_blank" rel="noopener"
+           aria-label="Kofoed Family Music on Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 01-.277-1.215c3.809-.87 7.076-.495 9.712 1.115a.623.623 0 01.207.857zm1.223-2.722a.78.78 0 01-1.072.257c-2.687-1.652-6.785-2.13-9.965-1.166a.78.78 0 01-.973-.519.781.781 0 01.519-.972c3.632-1.102 8.147-.568 11.234 1.328a.78.78 0 01.257 1.072zm.105-2.835C14.69 8.95 9.375 8.775 6.297 9.71a.937.937 0 11-.543-1.793c3.573-1.084 9.515-.875 13.27 1.368a.937.937 0 01-.31 1.582z"/>
+          </svg>
+        </a>
+
+        <!-- Apple Music -->
+        <!-- REPLACE: update href with real Apple Music artist URL -->
+        <a href="https://music.apple.com/us/artist/kofoed-family-music/1666744650"
+           class="footer-icon-link" target="_blank" rel="noopener"
+           aria-label="Kofoed Family Music on Apple Music">
+          <img src="img/Apple music.png" alt="Apple Music" style="width:1.25rem;height:1.25rem;object-fit:contain;opacity:0.45;transition:opacity 0.25s;" class="footer-apple-img"></a>
+
+        <!-- YouTube -->
+        <!-- REPLACE: update href with real YouTube channel URL -->
+        <a href="https://www.youtube.com/@kofoedfamilymusic"
+           class="footer-icon-link" target="_blank" rel="noopener"
+           aria-label="Kofoed Family Music on YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <!-- REPLACE: update href with real Instagram URL -->
+        <a href="https://www.instagram.com/kofoed_family_music/"
+           class="footer-icon-link" target="_blank" rel="noopener"
+           aria-label="Kofoed Family Music on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <!-- REPLACE: update href with real Facebook page URL -->
+        <a href="https://www.facebook.com/KofoedFamilyMusic"
+           class="footer-icon-link" target="_blank" rel="noopener"
+           aria-label="Kofoed Family Music on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.49 0-1.956.93-1.956 1.887v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+          </svg>
+        </a>
+
+      </nav>
+
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> Kofoed Family Music. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
